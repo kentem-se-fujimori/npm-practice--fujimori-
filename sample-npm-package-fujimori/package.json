@@ -1,7 +1,8 @@
 {
   "name": "@kentem-se-fujimori/sample-npm-package-fujimori",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",  
+  "module": "dist/index.js", 
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc --build",
@@ -13,6 +14,13 @@
   "license": "ISC",
   "devDependencies": {
     "typescript": "^5.8.3"
+  },
+"exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
   },
   "description": "",
   "dependencies": {
