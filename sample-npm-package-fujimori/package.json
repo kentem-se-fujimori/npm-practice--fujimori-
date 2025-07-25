@@ -1,5 +1,5 @@
 {
-  "name": "@ks-kentem/sample-npm-package-fujimori",
+  "name": "@kentem-se-fujimori/sample-npm-package-fujimori",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
